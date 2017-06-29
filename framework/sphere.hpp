@@ -27,6 +27,7 @@ public:
         float volume() const override;
 
         std::ostream& print(std::ostream& os) const override;
+
 };
 
 #endif

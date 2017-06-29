@@ -5,6 +5,8 @@
 #include "shape.hpp"
 #include <glm/vec3.hpp>
 #include <string>
+#include "ray.hpp"
+
 
 class Box: public Shape {
          glm::vec3 min;
@@ -24,6 +26,9 @@ public:
         float volume() const override;
 
         std::ostream& print(std::ostream& os) const override;
+
+        bool intersect(Ray const& ray, float &t)override;
+
 };
 
 #endif

@@ -14,3 +14,7 @@ float Box::volume() const{auto holder=max-min; return holder.x *holder.y*holder.
 
 std::ostream& Box::print(std::ostream& os) const{Shape::print(os);
   os << "Minimum: (" << min.x <<" / "<<min.y<<" / "<<min.z<<")\nMaximum: ("<< max.x <<" / "<<max.y <<" / "<<max.y<<")\n";}
+
+bool Box::intersect(Ray const& ray, float & t){
+	
+}

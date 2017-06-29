@@ -4,6 +4,9 @@
 #include <iostream>
 #include <cmath>
 #include "color.hpp"
+#include "ray.hpp"
+
+
 class Shape {
 protected:
         std::string m_name;
@@ -20,6 +23,8 @@ public:
         virtual float volume() const {}; 
 
         virtual std::ostream& print(std::ostream& os) const;
+
+        virtual bool intersect(Ray const& ray, float &t)=0;
 };
 
 
