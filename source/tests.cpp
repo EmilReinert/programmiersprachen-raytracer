@@ -1,14 +1,15 @@
 #define CATCH_CONFIG_RUNNER
 #include <catch.hpp>
-#include <glm/vec3.hpp>
-#include "vec2.cpp"
-#include "swag.cpp"
+#include "sphere.hpp"
+#include "box.hpp"
+#include "shape.cpp"
+#include "ray.hpp"
+#include <glm/glm.hpp>
+#include <glm/gtx/intersect.hpp>
 #include "color.hpp"
 
 
-TEST_CASE("b","[b]"){
-	REQUIRE(Vec2(2,2).x == 2);
-}
+
 
 
 TEST_CASE("boxconstruct","[boxconstruct]"){
