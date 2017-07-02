@@ -1,4 +1,3 @@
-#include "swag.cpp"
 #include <iostream>
 #include "color.hpp"
 
