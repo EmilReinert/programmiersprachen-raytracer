@@ -28,6 +28,8 @@ public:
 
         std::ostream& print(std::ostream& os) const override;
 
+        //distance is overwritten with distance between origin and shape
+        virtual bool intersect(Ray const& ray, float& distance) = 0;
 };
 
 #endif
