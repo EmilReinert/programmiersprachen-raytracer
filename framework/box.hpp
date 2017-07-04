@@ -27,7 +27,7 @@ public:
 
         std::ostream& print(std::ostream& os) const override;
 
-        bool intersect(Ray const& ray, float &t)override;
+        virtual bool intersect(Ray const& ray, float& distance) = 0;
 
 };
 
